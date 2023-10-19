@@ -1,6 +1,5 @@
 import React, {useState,useRef} from "react";
 import "./employee.css";
-import Swal from "sweetalert2";
 
 export const Employee = () => {
     const [fname, setName] = useState('');
@@ -13,8 +12,9 @@ export const Employee = () => {
     const _mobile = useRef("");
 
     const handleSubmit = (e) => {
-        console.log('Name:',fname);
-        console.log('Description:',lname);
+        e.preventDefault();
+        console.log('Name:', fname);
+        console.log('Description:', lname);
         console.log('Email:', emailid);
         console.log('PhoneNum:', mobile);
     }
@@ -24,6 +24,7 @@ export const Employee = () => {
         _lname.current.value = "";
         _emailid.current.value = "";
         _mobile.current.value = "";
+ 
     }
 
 
