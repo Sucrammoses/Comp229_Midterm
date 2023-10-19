@@ -1,0 +1,17 @@
+.Container{
+    background-color:skyblue;
+    margin:auto;
+    border-color:black;
+    border-style:dahsed;
+    width: 700px;
+    font-weight:bold;
+    color:white;
+}
+.Header{
+    color:green;
+    text-decoration:underline;
+    
+}
+.World{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
